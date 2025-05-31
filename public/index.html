@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,10 @@
   <!-- Ícone do site (ajuste o caminho se necessário) -->
   <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -18,6 +23,7 @@
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
 
   <div id="header"></div>
@@ -29,22 +35,22 @@
       <p class="bem-vindos">Bem-vindos ao mundo dos doces sonhos!</p>
       <div class="carrossel-container">
         <div class="carrossel">
-            <div class="slide active">
-                <img src="imagens/img1.jpeg" alt="Imagem 1">
-            </div>
-            <div class="slide">
-                <img src="imagens/img2.jpeg" alt="Imagem 2">
-            </div>
-            <div class="slide">
-                <img src="imagens/img4.jpeg" alt="Imagem 3">
-            </div>
+          <div class="slide active">
+            <img src="imagens/img1.jpeg" alt="Imagem 1">
+          </div>
+          <div class="slide">
+            <img src="imagens/img2.jpeg" alt="Imagem 2">
+          </div>
+          <div class="slide">
+            <img src="imagens/img4.jpeg" alt="Imagem 3">
+          </div>
         </div>
         <button class="carrossel-btn prev" onclick="mudarSlide(-1)">&#10094;</button>
         <button class="carrossel-btn next" onclick="mudarSlide(1)">&#10095;</button>
         <div class="indicadores">
-            <span class="indicador active" onclick="irParaSlide(0)"></span>
-            <span class="indicador" onclick="irParaSlide(1)"></span>
-            <span class="indicador" onclick="irParaSlide(2)"></span>
+          <span class="indicador active" onclick="irParaSlide(0)"></span>
+          <span class="indicador" onclick="irParaSlide(1)"></span>
+          <span class="indicador" onclick="irParaSlide(2)"></span>
         </div>
       </div>
     </section>
@@ -52,13 +58,19 @@
     <!-- Seção Quem Somos -->
     <section id="quem-somos" class="hidden">
       <h2>Quem Somos</h2>
-      <p><strong>Eita Sonho Bão!</strong> nasceu da paixão por doces artesanais e do desejo de reinventar um clássico da confeitaria brasileira: o sonho.<br><br>
-        Nosso diferencial está na combinação perfeita entre tradição e inovação, oferecendo um produto assado, mais leve e irresistivelmente saboroso.<br><br>
-        Nosso carro-chefe, o <strong>sonho assado com recheio de goiabada</strong>, é feito com ingredientes selecionados, massa macia e aerada, e goiabada cremosa, equilibrando sabor e leveza.<br>
+      <p><strong>Eita Sonho Bão!</strong> nasceu da paixão por doces artesanais e do desejo de reinventar um clássico da
+        confeitaria brasileira: o sonho.<br><br>
+        Nosso diferencial está na combinação perfeita entre tradição e inovação, oferecendo um produto assado, mais leve
+        e irresistivelmente saboroso.<br><br>
+        Nosso carro-chefe, o <strong>sonho assado com recheio de goiabada</strong>, é feito com ingredientes
+        selecionados, massa macia e aerada, e goiabada cremosa, equilibrando sabor e leveza.<br>
         Tudo isso sem fritura, oferecendo uma experiência deliciosa e mais saudável.<br><br>
-        Acreditamos na valorização da culinária afetiva, resgatando sabores que despertam memórias e criam experiências.<br>
-        Nosso compromisso é encantar paladares com um doce artesanal de alta qualidade, preparado com carinho e atenção.<br><br>
-        <strong>Público-alvo:</strong> frequentadores de feiras e eventos gastronômicos, famílias, apreciadores da cultura tradicional brasileira, empresas e revendedores de produtos diferenciados.
+        Acreditamos na valorização da culinária afetiva, resgatando sabores que despertam memórias e criam
+        experiências.<br>
+        Nosso compromisso é encantar paladares com um doce artesanal de alta qualidade, preparado com carinho e
+        atenção.<br><br>
+        <strong>Público-alvo:</strong> frequentadores de feiras e eventos gastronômicos, famílias, apreciadores da
+        cultura tradicional brasileira, empresas e revendedores de produtos diferenciados.
       </p>
     </section>
 
@@ -87,19 +99,19 @@
       <form id="form-encomenda">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
-        
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        
+
         <label for="produto">Produto:</label>
         <input type="text" id="produto" name="produto" required>
-        
+
         <label for="quantidade">Quantidade:</label>
         <input type="number" id="quantidade" name="quantidade" required>
-        
+
         <label for="mensagem">Mensagem:</label>
         <textarea id="mensagem" name="mensagem"></textarea>
-        
+
         <button type="submit">Enviar Pedido</button>
       </form>
     </section>
@@ -110,13 +122,13 @@
       <form id="form-feedback">
         <label for="nome-feedback">Nome:</label>
         <input type="text" id="nome-feedback" name="nome-feedback" required>
-        
+
         <label for="email-feedback">Email:</label>
         <input type="email" id="email-feedback" name="email-feedback" required>
-        
+
         <label for="mensagem-feedback">Mensagem:</label>
         <textarea id="mensagem-feedback" name="mensagem-feedback" required></textarea>
-        
+
         <button type="submit">Enviar Feedback</button>
       </form>
     </section>
@@ -124,6 +136,11 @@
 
   <!-- Rodapé carregado dinamicamente -->
   <div id="footer"></div>
+
+  <a href="https://wa.me/5518997038514?text=Vim%20pelo%20site" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fab fa-whatsapp"></i>
+  </a>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -165,4 +182,5 @@
   <script src="scripts/carrossel.js"></script>
   <script src="scripts/formularios.js"></script>
 </body>
+
 </html>
